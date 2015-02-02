@@ -156,6 +156,23 @@ ul {
 }
 
 
+/*-=-=-=-=-*/
+/*back btn*/
+/*-=-=-=-=-*/
+
+.back-button {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.back-button a {
+  text-decoration: none;
+  color: #CCC;
+  font-size: small;
+}
+
 /*-=-=-=-*/
 /*footer*/
 /*-=-=-=-*/
