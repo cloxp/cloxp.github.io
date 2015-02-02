@@ -1,0 +1,37 @@
+
+html, body {
+  background: #FFF;
+  color: #666;
+  font-family: 'Myriad Pro',Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-smoothing: antialiased;
+  line-height: 1.7em;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+}
+
+h1,h2,h3,h4,h5 {
+  text-align: center;  
+  letter-spacing: 0;
+  /*font-family: 'Myriad Pro',Helvetica,Arial,sans-serif;*/
+  padding: 0;
+  color: #999;
+  /*font-weight: 700;*/
+  /*font-size: 22px;*/
+  /*font-weight: 500;*/
+  line-height: 1.1;
+  margin-bottom: 70px;
+}
+
+.masthead {
+  margin-bottom: 0px;
+}
+
+.greeting p {
+  text-align: center;
+}
