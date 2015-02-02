@@ -139,13 +139,20 @@ li {
 /*footer*/
 /*-=-=-=-*/
 
+.spacer {
+  padding: 6px;
+}
+
 .footer {
   text-align: center;
 }
 
-.footer a, .footer:hover a {
+.footer *, .footer *:hover {
   font-size: .8em;
   color: #CCC;
+}
+
+.footer a, .footer:hover a {
   text-decoration: none;
 }
 
