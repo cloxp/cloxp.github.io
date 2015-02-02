@@ -4,7 +4,7 @@
         <title>cloxp-news</title>
         <description>A blog for the Clojure development environment cloxp</description>
         <link>http://cloxp.github.io</link>
-        <lastBuildDate>Mon, 02 Feb 2015 10:52:52 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Feb 2015 12:24:16 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <image>
             <title>cloxp-news</title>
@@ -14,9 +14,9 @@
         <copyright>2015 Robert Krahn</copyright>
         <generator>Feed for Node.js</generator>
         <item>
-            <title><![CDATA[Welcome!]]></title>
-            <link>http://cloxp.github.io/2015-02-02-welcome</link>
-            <guid>http://cloxp.github.io/2015-02-02-welcome</guid>
+            <title><![CDATA[What's up with cloxp?]]></title>
+            <link>http://cloxp.github.io/2015-02-02-whats-up.html</link>
+            <guid>http://cloxp.github.io/2015-02-02-whats-up.html</guid>
             <pubDate>Mon, 02 Feb 2015 10:50:22 GMT</pubDate>
             <description><![CDATA[What's up with cloxp?]]></description>
             <content:encoded/>

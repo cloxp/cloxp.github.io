@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/skeleton.css" rel="stylesheet">
+    <link href="/css/default.css" rel="stylesheet">
+    <title>What's up with cloxp</title>
+    <meta property="og:title" content="What's up with cloxp">
+    <meta property="og:description" content="What's up with cloxp?">
+    <meta property="og:url" content="/2015-02-02-whats-up.html">
+    <meta property="og:image" content="/images/cloxp-logo.jpg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- link(href="/css/greeting.css" rel="stylesheet")-->
+  </head>
+  <body>
+    <div class="content">
+      <div style="margin-bottom: 50px" class="container">
+        <div class="row">
+          <div class="offset-by-two eight columns"><h1 id="what-s-up-with-cloxp-">What&#39;s up with cloxp?</h1>
+<p>It&#39;s been almost a month since the initial <a href="http://robert.kra.hn/projects/cloxp">announcement of cloxp</a>. I haven&#39;t been lazy and worked on several features that will make the usage of cloxp hopefully fun and pleasant.</p>
+<p>Here is an overview of the feature set of cloxp as of today:</p>
+<h3 id="usage-and-access">Usage and access</h3>
+<ul>
+<li>as a Web IDE, spawning individual workspaces and requiring no installation</li>
+<li>as a locally installed IDE, requiring a pre-installed JVM and node.js 0.10</li>
+</ul>
+<p>In both cases cloxp will connect to a Clojure process via nREPL.</p>
+<h3 id="tooling">Tooling</h3>
+<ul>
+<li>System browser: explore and modify Clojure namespaces and namespace vars</li>
+<li>&quot;Scratch&quot; workspaces: to support exploratory programming</li>
+<li>Clojars browser: to search for and install dependencies at runtime</li>
+<li>OS shell integration: to run whatever other process you may need, for example git. There are several tools that make use of this integration already</li>
+<li>A flexible and very customizable windowing system: Based on Morphic and Lively Web; it allows to change how existing tools work, or create new ones, on the fly.</li>
+</ul>
+<h3 id="interactive-programming-and-debugging">Interactive programming and debugging</h3>
+<ul>
+<li>Watchers: cloxp allows to install &quot;watchers&quot; into code that will continuously gather data &quot;flowing&quot; through the instrumented expression.</li>
+<li>Code evaluation: To run and inspect code, all clojure expressions can be evaluated.</li>
+<li>Live eval: Instead of evaluating code by hand you can enable &quot;live eval&quot; in any clojure code editor. It will automatically re-evaluate the expressions in your workspace. Paired with watchers it is a powerful and fun way of working.</li>
+</ul>
+<h3 id="what-s-next-">What&#39;s next?</h3>
+<p>Cloxp approaches a state in which I&#39;m willing to call it &quot;0.1.0&quot;. There are still plenty of bugs left but I already had some very productive sessions (cloxp is entirely developed in itself, with all the fun and tears that this brings).
+However, before I make a first release I want to ask a handful of people to test the environment and help discover bugs and showstoppers that would spoil an initial experiment. If you are interested please ping me, either at <a href="mailto:robert.krahn@gmail.com?Subject=testing%20cloxp">robert.krahn@gmail.com</a> or some other channel. I&#39;ll let you know the details for testing the system.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="inner"><a href="mailto:robert.krahn@gmail.com?Subject=cloxp" target="_top">© 2015 Robert Krahn</a><span class="spacer">|</span><a href="/atom.xml">feed</a></div>
+    </div>
+  </body>
+</html>

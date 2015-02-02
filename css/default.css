@@ -21,16 +21,19 @@
 }
 
 h1,h2,h3,h4,h5 {
-  font-family: 'Lato',sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.1;
-  padding: .5em 0 .9em 0;
+  /*font-family: 'Lato',sans-serif;*/
+  font-size: 18px;
   color: #333;
   margin-top: 30px;
-  line-height: 1.5em
+  line-height: 1.5em;
+  letter-spacing: 0;
   /*font-size: 20px;*/
+  margin-top: .8rem;
+  margin-bottom: .6rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
 }
 
 html, body {
@@ -38,11 +41,21 @@ html, body {
   color: #666;
   /*font-family: 'Myriad Pro',Helvetica,Arial,sans-serif;*/
   font-family: 'Lora', serif;
-  font-size: 18px;
+  font-size: 12px;
   margin: 0;
   padding: 0;
   font-smoothing: antialiased;
   line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: underline;
+}
+
+a:hover{
+  color: #333;
+  text-decoration: underline;
 }
 
 pre, blockquote, form, dl, figure, table, p, ul, ol, form {
@@ -51,6 +64,11 @@ pre, blockquote, form, dl, figure, table, p, ul, ol, form {
 
 li {
   margin-bottom: .2rem;
+}
+
+ul {
+  list-style-position: outside;
+  margin-left: 20px;
 }
 
 .row {
@@ -78,8 +96,7 @@ li {
 }
 
 .masthead h1, .masthead h2, .masthead h3, .masthead h4 {
-  text-shadow: 0 2px 2px rgba(0,0,0,0.75);
-  color: white;
+  color: #666;
   display: inline-block;
   vertical-align: middle;
   padding: 0;
@@ -102,14 +119,16 @@ li {
 }
 
 @media(max-width: 600px) {
-  .masthead h1 { font-size: 33px }
-  .masthead h2 { font-size: 30px }
-  .masthead h3 { font-size: 28px }
+  .masthead h1 { font-size: 30px }
+  .masthead h2 { font-size: 26px }
+  .masthead h3 { font-size: 22px }
 }
 
 @media(min-width: 600px) {
-  h1 { font-size: 30px }
-  h2 { font-size: 28px }
+  h1 { font-size: 28px }
+  h2 { font-size: 26px }
+  h3 { font-size: 20px }
+  h4 { font-size: 18px }
   .masthead h1 { font-size: 36px }
   .masthead h2 { font-size: 30px }
   .masthead h3 { font-size: 28px }
@@ -117,7 +136,7 @@ li {
 
 @media(min-width: 1000px) {
   html,body {
-      font-size:20px
+      font-size:16px
   }
 
   .boxout {
@@ -125,8 +144,10 @@ li {
       font-size: 22px
   }
 
-  h1 { font-size: 33px }
-  h2 { font-size: 30px }
+  h1 { font-size: 28px }
+  h2 { font-size: 26px }
+  h3 { font-size: 20px }
+  h4 { font-size: 18px }
   .masthead h1 { font-size: 40px }
   .masthead h2 { font-size: 36px }
   .masthead h3 { font-size: 33px }
@@ -143,8 +164,16 @@ li {
   padding: 6px;
 }
 
+
 .footer {
+  position: relative;
+}
+
+.footer .inner {
+  position: absolute;
   text-align: center;
+  left: 0; right: 0;
+  bottom: 0;
 }
 
 .footer *, .footer *:hover {
