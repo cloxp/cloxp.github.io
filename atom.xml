@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>cloxp-news</title>
+    <link>http://cloxp.github.io</link>
+    <updated>2015-02-02T10:52:52Z</updated>
+    <author>
+        <name>Robert Krahn</name>
+        <email>robert.krahn@gmail.com</email>
+        <uri>https://robert.kra.hn</uri>
+    </author>
+    <link rel="alternate" href="http://cloxp.github.io"/>
+    <subtitle>A blog for the Clojure development environment cloxp</subtitle>
+    <logo>http://cloxp.github.io/images/cloxp-logo.png</logo>
+    <rights>2015 Robert Krahn</rights>
+    <generator>Feed for Node.js</generator>
+    <entry>
+        <title type="html"><![CDATA[Welcome!]]></title>
+        <id>http://cloxp.github.io/2015-02-02-welcome</id>
+        <link href="http://cloxp.github.io/2015-02-02-welcome">
+        </link>
+        <updated>2015-02-02T10:50:22Z</updated>
+        <summary type="html"><![CDATA[What's up with cloxp?]]></summary>
+        <author>
+            <name>Robert Krahn</name>
+            <email>robert.krahn@gmail.com</email>
+            <uri>https://robert.kra.hn</uri>
+        </author>
+    </entry>
+</feed>

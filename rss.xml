@@ -1,2 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[cloxp-news]]></title><description><![CDATA[A blog for the Clojure development environment cloxp]]></description><link>http://cloxp.github.io</link><image><url>http://cloxp.github.io/images/cloxp-logo.png</url><title>cloxp-news</title><link>http://cloxp.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Mon, 02 Feb 2015 10:27:17 GMT</lastBuildDate><atom:link href="http://cloxp.github.io/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Robert Krahn]]></author><pubDate>Mon, 02 Feb 2015 10:20:18 GMT</pubDate><copyright><![CDATA[2015 Robert Krahn]]></copyright><language><![CDATA[en]]></language><ttl>60</ttl><category><![CDATA[Clojure]]></category><category><![CDATA[Programming]]></category><category><![CDATA[Programming Tools]]></category><item><title><![CDATA[Welcome!]]></title><description><![CDATA[What's up with cloxp?]]></description><link>http://example.com/article4?this&amp;that</link><guid isPermaLink="false">329D23AD-A889-453D-BD86-03D455E6D845</guid><dc:creator><![CDATA[Robert Krahn]]></dc:creator><pubDate>Mon, 02 Feb 2015 08:00:00 GMT</pubDate></item></channel></rss>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>cloxp-news</title>
+        <description>A blog for the Clojure development environment cloxp</description>
+        <link>http://cloxp.github.io</link>
+        <lastBuildDate>Mon, 02 Feb 2015 10:52:52 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <image>
+            <title>cloxp-news</title>
+            <url>http://cloxp.github.io/images/cloxp-logo.png</url>
+            <link>http://cloxp.github.io</link>
+        </image>
+        <copyright>2015 Robert Krahn</copyright>
+        <generator>Feed for Node.js</generator>
+        <item>
+            <title><![CDATA[Welcome!]]></title>
+            <link>http://cloxp.github.io/2015-02-02-welcome</link>
+            <guid>http://cloxp.github.io/2015-02-02-welcome</guid>
+            <pubDate>Mon, 02 Feb 2015 10:50:22 GMT</pubDate>
+            <description><![CDATA[What's up with cloxp?]]></description>
+            <content:encoded/>
+            <author>
+                <name>Robert Krahn</name>
+                <email>robert.krahn@gmail.com</email>
+                <link>https://robert.kra.hn</link>
+            </author>
+            <enclosure url="http://cloxp.github.io/images/cloxp-logo.png">
+            </enclosure>
+        </item>
+    </channel>
+</rss>
