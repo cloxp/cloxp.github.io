@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/skeleton.css" rel="stylesheet">
+    <link href="/css/default.css" rel="stylesheet">
+    <title>cloxp</title>
+    <meta property="og:title" content="cloxp">
+    <meta property="og:description" content="Programming Clojure, Smalltalk-style">
+    <meta property="og:url" content="http://robert.kra.hn/projects/projects/cloxp">
+    <meta property="og:image" content="http://robert.kra.hn/projects/cloxp/assets/cloxp-logo.jpg">
+  </head>
+  <body>
+    <div class="back-button"><a href="/">back</a></div>
+    <div class="content">
+      <div class="masthead u-full-width">
+        <h1><img src="/images/cloxp-logo.png"></h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="offset-by-one ten columns"><!--:robertsMarkdown-->
+<!--[SECTION:container,row,offset-by-one ten columns]-->
+
+<h2 id="programming-clojure-smalltalk-style">Programming Clojure, Smalltalk-style</h2>
+<p>This is the first post about a system I call <em>cloxp</em>, a development environment for Clojure that facilitates interactivity and exploration. In the following I want to explain the motivation of the project.</p>
+<p>Apart from this introduction I plan two more posts, one explaining some of the features of cloxp and one describing change handling and persistency. Please note that cloxp is a project in its very early stages. There are a lot of rough edges and missing features. However, I already enjoy working with it and I would love to get constructive feedback about how to improve it and how to drive the development forward.</p>
+<p>Cloxp is open source and you will be able to use it both on the web without installation or sign on and locally by installing it on your system. I&#39;ll be happy about any help and feedback that you might be able to offer!</p>
+<p>I&#39;ll post more information about how to try out the system in the next few days. Here is a short sneek peak for now:</p>
+
+            <div style="text-align: center;" class="video-wrapper">
+              <iframe style="display: inline-block;" width="560" height="315" src="//www.youtube.com/embed/6x_4IHKIPas" frameborder="0" allowfullscreen></iframe>
+            </div><h3 id="interactive-programming">Interactive programming</h3>
+<p>Clojure comes with a set of qualities that shape how programmers can interact with the language and runtime environment. To a large part this is derived from the <a href="https://www.ida.liu.se/ext/caisor/archive/1978/001/caisor-1978-001.pdf">powerful yet simple ideas and concepts</a> Clojure builds on. Properties such as homoiconicity (your code is nothing special, &quot;just&quot; data) enable several versatile features: Meta-programming based on code transformations (macros). Documentation and other meta-data that becomes part of the actual system. Structural editing and inspection because, well, code is just data!</p>
+<p>Clojure is entirely dynamic; the runtime brings all that is needed to execute code even &quot;after&quot; the program was created. From the standpoint of a programmer this means that there is no real difference between &quot;compile time&quot; and &quot;runtime&quot;. Programming becomes much more of a flow of changing the code structure a little or trying something out and immediately seeing the effect. The program does not need to be stopped to reset program state.</p>
+<p>It is not just about saving time while programming. One important aspect is not to interrupt the flow of creation. As a result the system supports a workflow that is more like a conversation, a back and forth between programmer and system. Actually, some of the earliest interactive computer systems such as <a href="https://www.youtube.com/watch?v=USyoT_Ha_bA#t=269">Ivan Sutherland&#39;s Sketchpad</a> and <a href="https://www.youtube.com/watch?v=JfIgzSoTMOs">Doug Engelbart&#39;s oN-Line System</a> were focused on exactly this aspect: How can computers support and interact with us in order to <a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">&quot;augment&quot;</a> and extend our abilities? I stand in awe realizing the depth of those ideas and visions. Taking those and comparing them to something as tiny and rough as cloxp now is seems naïve and blasphemous. When discussing tools and languages it is easy to get lost in the nitty-gritty details and keeping in mind the &quot;bigger picture&quot; can help when thinking about why we want such tools in the first place and what kind of features and workflows are desirable.</p>
+<p>Even though a lot of the available tooling for Clojure is really good when compared to other environments, with such a great underlying system the tooling and workflows around the language deserve to be made even better, especially if you keep the original visions of those pioneering systems mentioned above in mind.</p>
+<p>I have really enjoyed working with <a href="https://github.com/clojure-emacs/cider">Cider</a>, <a href="https://cursiveclojure.com/">Cursive</a>, and <a href="http://lighttable.com/">LightTable</a>. These are all good tools for Clojure development and can already support an interactive workflow via their repl integrations. If you want to use Clojure in production today these tools will be a much better fit than cloxp. With cloxp, however, it should be possible to explore alternative workflows that embrace more the dynamic &quot;liveness&quot; that a Clojure runtime system can provide and that are less file-centric and configuration-driven than current tooling.</p>
+<!---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+
+
+<h3 id="smalltalk-self-and-the-power-of-directness-and-liveness">Smalltalk, Self, and the power of directness and liveness</h3>
+<p>To go forward, it might be worth looking back some more. Besides Lisp, Smalltalk is another family of systems that pioneered various aspects of computer interaction and programming. Even more than Lisp, Smalltalk was focused on interactive and exploratory programming from its <a href="http://lively-web.org/users/Dan/ALTO-Smalltalk-72.html">earliest version</a> on. There is at least one major difference between the two languages/environments: Smalltalk&#39;s tooling provides a rich set of widgets and graphical representation of objects, besides text. Those objects can be used to visualize data, and can capture input and gestures from users. Since a Smalltalk system is as integrated as a Lisp system, those graphical facilities and their primitives can not only provide a tooling layer but can also be used by programmers to create rich graphical applications themselves<sup>*</sup>.</p>
+<p>Many people favor their vim/emacs/zsh setup over any graphical programming environment. This is understandable: text is an extremely powerful representation of data, and it is mostly independent of a particular encoding or format. Tooling to process text exists in various forms and across systems. However, I&#39;ll argue that it is possible to combine both worlds effectively and hope that cloxp can be a proof-of-concept. Keep in mind that both graphical and textual representations are just that — representations. Even though a data structure can be made explorable and modifiable in a graphical dropdown inspector doesn&#39;t mean that it couldn&#39;t be modified (maybe even at the same time) in a textual representation. <a href="https://github.com/swannodette/om">om</a> is a beautiful example how a functional style system can make it easy to render and synchronize between different views of data structures. In the same way, I think, it is possible to bring more richness and power into our daily tools.</p>
+<p><a href="http://www.selflanguage.org/_static/published/self-power.pdf">Self</a> is a system that proved how a more direct and interactive workflow can simplify working with software systems. Software, by definition, is about creating abstractions. If a tool can make those abstractions explorable, &quot;touchable&quot;, <a href="http://billmaya.net/wp-content/uploads/Programming-as-an-Experience-The-Inspiration-for-Self.pdf">the way we interact and think about systems while programing</a> can be fundamentally improved. Instead of just standing outside the system and trying to reason about some abstract algorithm, Self enabled the programmer to go &quot;into the objects&quot; and explore the system from a &quot;first-person&quot; viewpoint. Self&#39;s UI, <a href="http://web.media.mit.edu/~jmaloney/papers/DirectnessAndLivenessInMorphic.pdf">Morphic</a> shows how these ideas can form a conceptually and technically simple set of rules that is applicable to other systems as well.</p>
+<p>How does this fit in with Clojure and cloxp? Clojure provides the runtime system that makes it possible to implement such a &quot;first-person viewpoint&quot;. The data and the objects that you work with are accessible and explorable, and being able to explore them using different representations can be very helpful while learning, debugging, and reasoning about the systems you create or explore. Since, again, code is just data, this automatically covers the entire system. A long term goal is to integrate directness and rich representations into cloxp while not forgetting about the importance of simplicity that comes with text and &quot;plain data&quot;.</p>
+<p><sup>*There are a lot of great resources to learn more about Smalltalk and the ideas behind it: <a href="http://www.squeak.org/">Squeak</a>, for example, is a current and open source Smalltalk environment, <a href="https://www.youtube.com/watch?v=4ki2AQvneD8">very much in tradition with the original ideas</a>.</sup></p>
+<!---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+
+
+<h3 id="system-centric-development">System-centric development</h3>
+<p>Clojure&#39;s runtime and meta-programming facilities enable one to view the system &quot;as a whole&quot;. Once the system is running, the static structure, such as files and configurations that so many of today&#39;s tools and workflows emphasize, become less important. By interacting with the live system, you can discover, for example by tracing or step-wise code execution, how system parts play together and thus understand relationships much more rapidly.</p>
+<p>Since code entities are still known at runtime, you can refer to them directly, ask for their documentation and see where they are used. Instead of referring to code by line and column number and changes by diffs of files, you can <a href="http://blog.datomic.com/2012/10/codeq.html">track code entities directly</a>. It becomes possible to view and explore programs and their parts outside of their original file context in <a href="https://www.youtube.com/watch?v=PsPX0nElJ0k">changeable and dynamic view compositions</a>. Even implementing cool features such as a <a href="http://www.hpi.uni-potsdam.de/hirschfeld/publications/media/SteinertTaeumelLinckePapeHirschfeld_2010_CodeTalkConversationsAboutCode_IEEE.pdf">code-centric chat</a> becomes possible.</p>
+<p>Most tooling for Clojure is focused around a file- and project-specific workflow. To a certain degree this is necessary to fit in with the rest of the world and create software usable outside of a Clojure context. However, while programming, learning and exploring, programming tools should allow us to see the runtime system. One of the main contributions of cloxp at this point is a Smalltalk-style system browser that allows you to browse and search namespaces and methods per-entity. It is possible to jump to the definitions of functions and vars you work with, even if they are outside of your own project. Going forward, I want to emphasize these code navigation and exploration features that make Smalltalk environments so much fun to use. Since documentation is by default part of the code in Clojure, this facility usually allows one to avoid looking at the javadocs at all.</p>
+<!---=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--->
+
+<h3 id="why-clojure-">Why Clojure?</h3>
+<p>The main motivation of cloxp is to provide tool support around live and interactive programming workflows. It is based on Clojure because Clojure comes with a set of attractive properties. The prerequisite of a reflective runtime environment and well defined abstraction for system-level objects around namespaces and vars is one. Clojure also combines an exciting mindset around simplicity with enough pragmatism to make it a successful system for real-world projects. This sounds like a contradiction, yet Clojure&#39;s success is proof enough that this approach actually works. Additionally, Clojure&#39;s strong view on how state is managed, the distinction between identities and values and the focus on immutability all make it easier to deal with the complexities that come with &quot;live programming&quot;. Having a strong concept of what state is and how state transitions occur makes programming tools simpler.</p>
+<p>Even though the system currently only implements a small set of the ideas presented here, I hope that this will be the scope for the features yet to come. I wish to thank my employer <a href="http://www.cdglabs.org/">CDG Labs</a> without whose support I would not be able to work on such cool things :)</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="inner"><a href="mailto:robert.krahn@gmail.com?Subject=cloxp" target="_top">© 2015 Robert Krahn</a><span class="spacer">|</span><a href="/atom.xml">feed</a></div>
+    </div>
+  </body>
+</html>
