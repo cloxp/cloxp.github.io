@@ -4,7 +4,7 @@
         <title>cloxp-news</title>
         <description>A blog for the Clojure development environment cloxp</description>
         <link>http://cloxp.github.io</link>
-        <lastBuildDate>Tue, 03 Feb 2015 01:16:28 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Feb 2015 10:52:46 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <image>
             <title>cloxp-news</title>
@@ -34,6 +34,21 @@
             <guid>http://cloxp.github.io/2015-02-02-whats-up.html</guid>
             <pubDate>Mon, 02 Feb 2015 10:50:22 GMT</pubDate>
             <description><![CDATA[What's up with cloxp?]]></description>
+            <content:encoded/>
+            <author>
+                <name>Robert Krahn</name>
+                <email>robert.krahn@gmail.com</email>
+                <link>https://robert.kra.hn</link>
+            </author>
+            <enclosure url="http://cloxp.github.io/images/cloxp-logo.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Capturing and inspecting values with cloxp]]></title>
+            <link>http://cloxp.github.io/2015-02-03-cloxp-capture.html</link>
+            <guid>http://cloxp.github.io/2015-02-03-cloxp-capture.html</guid>
+            <pubDate>Tue, 03 Feb 2015 18:00:00 GMT</pubDate>
+            <description><![CDATA[How to capture values for debugging and inspection using cloxp]]></description>
             <content:encoded/>
             <author>
                 <name>Robert Krahn</name>

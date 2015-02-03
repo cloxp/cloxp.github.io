@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/skeleton.css" rel="stylesheet">
+    <link href="/css/default.css" rel="stylesheet">
+    <title>Capturing and inspecting values</title>
+    <meta property="og:title" content="Capturing and inspecting values with cloxp">
+    <meta property="og:description" content="How to capture values for debugging and inspection using cloxp.">
+    <meta property="og:url" content="/2015-02-03-cloxp-capture.html">
+    <meta property="og:image" content="/images/cloxp-logo.jpg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- link(href="/css/greeting.css" rel="stylesheet")-->
+  </head>
+  <body>
+    <div class="back-button"><a href="/">back</a></div>
+    <div class="content">
+      <div style="margin-bottom: 50px" class="container">
+        <div class="row">
+          <div class="offset-by-two eight columns"><h1 id="capturing-and-inspecting-values">Capturing and inspecting values</h1>
+<p>One reason why programming can be considered &quot;hard&quot; is the fact that programs by definition are build on abstractions. As much power as abstractions can bring: they can make it harder to actually <em>see</em> what happens in programs.</p>
+<p>Take the object-oriented concept of classes as an example. A class serves as a description of objects<sup>*</sup>. First when a class gets instantiated it produces an actual thing whose state can be inspected and whose behavior observed. One big contribution of the Self language was to show how much more direct and straightforward programming becomes when prototypical inheritance (no abstract classes anymore) is paired with tools that allow to <a href="http://www.selflanguage.org/_static/published/self4.0UserInterface.pdf">directly interact with objects</a>.</p>
+<p>No matter which programming methodology you subscribe to, the programming language and the tools you use should make it easy for you to understand and <em>see</em> what happens in the programs you write. Playing interpreter is not our strong side, computers are much better at that!</p>
+<p><small><sup>*</sup> Even if your programming language has first-class classes (as it should).</small></p>
+<h3 id="capturing-clojure-state-with-cloxp">Capturing Clojure state with cloxp</h3>
+<p>One feature of cloxp is to instrument expressions and capture the values they produce over time. In its essence this is actually not more than libraries like <a href="https://github.com/clojure/tools.trace">tools.trace</a> or <a href="https://github.com/dgrnbrg/spyscope">spyscope</a> provide. However, building this feature into a rich environment such as the one cloxp provides allows </p>
+<p>a) to easily instrument multiple locations and arrange the gathered data in a way that allows to compare it and to stay on top of things</p>
+<p>b) to access the gathered data directly, for example to inspect it further</p>
+<p>Here is how it works. Inside a function you select a sub expression for capturing. From that point on a small annotation that appears on all views of that function will show the last value that was captured:</p>
+
+            <div style="text-align: center; margin-left: -80px; margin-bottom: 120px;" class="video-wrapper">
+              <video style="display: inline-block;" width="780" height="460" controls="" autobuffer="autobuffer">
+                <source src="videos/cloxp-capture-1.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"/>
+                <source src="videos/cloxp-capture-1.oggtheora.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;"/>
+              </video>
+            </div>
+            <p>By clicking on that annotation (or invoking a shortcut of you are a keyboard junkie) you can open up another workspaces that shows the captured values. Note that the captured data is still there, you can directly evaluate and inspect it:</p>
+            <div style="text-align: center; margin-left: -80px; margin-bottom: 120px;" class="video-wrapper">
+              <video style="display: inline-block;" width="780" height="460" controls="" autobuffer="autobuffer">
+                <source src="videos/cloxp-capture-2.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"/>
+                <source src="videos/cloxp-capture-2.oggtheora.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;"/>
+              </video>
+            </div>
+            <p>This also works for asynchronous code:</p>
+            <div style="text-align: center; margin-left: -80px; margin-bottom: 120px;" class="video-wrapper">
+              <video style="display: inline-block;" width="780" height="460" controls="" autobuffer="autobuffer">
+                <source src="videos/cloxp-capture-3.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"/>
+                <source src="videos/cloxp-capture-3.oggtheora.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;"/>
+              </video>
+            </div>
+            <p>The feature is "real" and not just meant for the playground; it is no problem to instrument system-level code and code across namespaces. Ever wanted to see what's really going on in your Clojure image? Just ask it!</p>
+            <div style="text-align: center; margin-left: -80px; margin-bottom: 120px;" class="video-wrapper">
+              <video style="display: inline-block;" width="780" height="500" controls="" autobuffer="autobuffer">
+                <source src="videos/cloxp-capture-4.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"/>
+                <source src="videos/cloxp-capture-4.oggtheora.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;"/>
+              </video>
+            </div>
+            <p>In order to stay on top of things you can get a summary of all captures:</p>
+            <div style="text-align: center; margin-left: -80px; margin-bottom: 120px;" class="video-wrapper">
+              <video style="display: inline-block;" width="780" height="460" controls="" autobuffer="autobuffer">
+                <source src="videos/cloxp-capture-5.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"/>
+                <source src="videos/cloxp-capture-5.oggtheora.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;"/>
+              </video>
+            </div><p>Capturing values is one of the simplest ways to help you <em>see</em> what is actually happing in your code. Paired with some support around visualization, managment and inspection it is a tool that will make the term &quot;printf debugging&quot; hopefully extinct.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="inner"><a href="mailto:robert.krahn@gmail.com?Subject=cloxp" target="_top">© 2015 Robert Krahn</a><span class="spacer">|</span><a href="/atom.xml">feed</a></div>
+    </div>
+  </body>
+</html>
