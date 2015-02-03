@@ -42,7 +42,9 @@ a:hover{
 }
 
 .post {
-  text-align: center;
+  /*margin-left: 280px !important;*/
+  padding-left: 35px;
+  text-align: left;
 }
 
 .post .date {
