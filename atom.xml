@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>cloxp-news</title>
     <link>http://cloxp.github.io</link>
-    <updated>2015-02-03T20:16:18Z</updated>
+    <updated>2015-02-09T15:00:52Z</updated>
     <author>
         <name>Robert Krahn</name>
         <email>robert.krahn@gmail.com</email>
@@ -46,6 +46,19 @@
         </link>
         <updated>2015-02-03T18:00:00Z</updated>
         <summary type="html"><![CDATA[How to capture values for debugging and inspection using cloxp]]></summary>
+        <author>
+            <name>Robert Krahn</name>
+            <email>robert.krahn@gmail.com</email>
+            <uri>https://robert.kra.hn</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Live eval]]></title>
+        <id>http://cloxp.github.io/2015-02-09-cloxp-live-eval.html</id>
+        <link href="http://cloxp.github.io/2015-02-09-cloxp-live-eval.html">
+        </link>
+        <updated>2015-02-09T15:00:00Z</updated>
+        <summary type="html"><![CDATA[Cloxp live evaluation - evals as you type]]></summary>
         <author>
             <name>Robert Krahn</name>
             <email>robert.krahn@gmail.com</email>
