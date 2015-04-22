@@ -4,7 +4,7 @@
         <title>cloxp-news</title>
         <description>A blog for the Clojure development environment cloxp</description>
         <link>http://cloxp.github.io</link>
-        <lastBuildDate>Mon, 09 Feb 2015 15:00:52 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Apr 2015 21:39:12 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <image>
             <title>cloxp-news</title>
@@ -64,6 +64,36 @@
             <guid>http://cloxp.github.io/2015-02-09-cloxp-live-eval.html</guid>
             <pubDate>Mon, 09 Feb 2015 15:00:00 GMT</pubDate>
             <description><![CDATA[Cloxp live evaluation - evals as you type]]></description>
+            <content:encoded/>
+            <author>
+                <name>Robert Krahn</name>
+                <email>robert.krahn@gmail.com</email>
+                <link>https://robert.kra.hn</link>
+            </author>
+            <enclosure url="http://cloxp.github.io/images/cloxp-logo.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Clojure/West and chocolate pudding]]></title>
+            <link>http://cloxp.github.io/2015-04-22-clojurewest.html</link>
+            <guid>http://cloxp.github.io/2015-04-22-clojurewest.html</guid>
+            <pubDate>Wed, 22 Apr 2015 23:00:00 GMT</pubDate>
+            <description><![CDATA[Clojure/West report]]></description>
+            <content:encoded/>
+            <author>
+                <name>Robert Krahn</name>
+                <email>robert.krahn@gmail.com</email>
+                <link>https://robert.kra.hn</link>
+            </author>
+            <enclosure url="http://cloxp.github.io/images/cloxp-logo.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Making cloxp rock]]></title>
+            <link>http://cloxp.github.io/2015-04-22-making-cloxp-rock.html</link>
+            <guid>http://cloxp.github.io/2015-04-22-making-cloxp-rock.html</guid>
+            <pubDate>Wed, 22 Apr 2015 23:05:00 GMT</pubDate>
+            <description><![CDATA[How to get involved and making cloxp a great tool]]></description>
             <content:encoded/>
             <author>
                 <name>Robert Krahn</name>

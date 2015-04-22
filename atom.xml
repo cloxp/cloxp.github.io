@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>cloxp-news</title>
     <link>http://cloxp.github.io</link>
-    <updated>2015-02-09T15:00:52Z</updated>
+    <updated>2015-04-22T21:39:12Z</updated>
     <author>
         <name>Robert Krahn</name>
         <email>robert.krahn@gmail.com</email>
@@ -59,6 +59,32 @@
         </link>
         <updated>2015-02-09T15:00:00Z</updated>
         <summary type="html"><![CDATA[Cloxp live evaluation - evals as you type]]></summary>
+        <author>
+            <name>Robert Krahn</name>
+            <email>robert.krahn@gmail.com</email>
+            <uri>https://robert.kra.hn</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Clojure/West and chocolate pudding]]></title>
+        <id>http://cloxp.github.io/2015-04-22-clojurewest.html</id>
+        <link href="http://cloxp.github.io/2015-04-22-clojurewest.html">
+        </link>
+        <updated>2015-04-22T23:00:00Z</updated>
+        <summary type="html"><![CDATA[Clojure/West report]]></summary>
+        <author>
+            <name>Robert Krahn</name>
+            <email>robert.krahn@gmail.com</email>
+            <uri>https://robert.kra.hn</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Making cloxp rock]]></title>
+        <id>http://cloxp.github.io/2015-04-22-making-cloxp-rock.html</id>
+        <link href="http://cloxp.github.io/2015-04-22-making-cloxp-rock.html">
+        </link>
+        <updated>2015-04-22T23:05:00Z</updated>
+        <summary type="html"><![CDATA[How to get involved and making cloxp a great tool]]></summary>
         <author>
             <name>Robert Krahn</name>
             <email>robert.krahn@gmail.com</email>
