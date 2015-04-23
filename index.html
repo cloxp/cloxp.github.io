@@ -11,9 +11,7 @@
     <meta property="og:url" content="/index.html">
     <meta property="og:image" content="/images/cloxp-logo.jpg">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href="/css/greeting.css" rel="stylesheet">
-    <!-- +fork-me('cloxp/cloxp')-->
-    <!-- script(src="http://lively-web.org/users/robertkrahn/node-lively2lively/lively2lively-browserified.js?name=website-three-world&baseURL=http://lively-web.org:8080&autoload=true")-->
+    <link href="/css/greeting.css" rel="stylesheet"><a href="https://github.com/cloxp/cloxp-install"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"/></a>
   </head>
   <body>
     <div class="content">
@@ -25,7 +23,28 @@
           <h3 class="offset-by-two eight columns">Programming Clojure, interactive and live</h3>
         </div>
       </div>
+      <div class="container community">
+        <div class="row">
+          <h4 class="fancy offset-by-four four columns"><span>Community</span></h4>
+        </div>
+        <div class="row">
+          <div class="offset-by-three six columns"><a href="https://groups.google.com/forum/#!forum/cloxp">Google groups mailing list</a><br><a href="irc://irc.freenode.net/#clojure">freenode IRC</a><br></div>
+        </div>
+        <iframe id="forum_embed" src="javascript:void(0)" scrolling="no" frameborder="0" width="900" height="700"></iframe>
+        <script type="text/javascript">
+          document.getElementById('forum_embed').src =
+            'https://groups.google.com/forum/embed/?place=forum/cloxp'
+            + '&showsearch=true&showpopout=true&showtabs=false%domain=cloxp.github.io'
+            + '&parenturl=' + encodeURIComponent(window.location.href);
+          
+        </script>
+      </div>
       <div class="container posts">
+        <div class="row">
+          <div class="offset-by-four four columns">
+            <h4 class="fancy"><span>News</span></h4>
+          </div>
+        </div>
         <div class="row">
           <div class="post offset-by-three six columns"><span class="date">Apr 22 2015</span><a href="2015-04-22-making-cloxp-rock">Making cloxp rock</a><br><span class="date">Apr 22 2015</span><a href="2015-04-22-clojurewest.html">Clojure/West and chocolate pudding</a><br><span class="date">Feb 09 2015</span><a href="2015-02-09-cloxp-live-eval.html">Live eval</a><br><span class="date">Feb 03 2015</span><a href="2015-02-03-cloxp-capture.html">Capture to see</a><br><span class="date">Feb 02 2015</span><a href="2015-02-02-whats-up.html">What's up with cloxp?</a><br><span class="date">Jan 07 2015</span><a href="cloxp-intro.html">Programming Clojure, Smalltalk-style</a></div>
         </div>

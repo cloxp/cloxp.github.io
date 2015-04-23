@@ -31,11 +31,16 @@ a:hover{
 }
 
 .masthead {
-  margin-bottom: 00px;
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+
+.container {
+  margin-bottom: 10px
 }
 
 .greeting {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 .greeting p {
   text-align: center;
@@ -52,4 +57,42 @@ a:hover{
   font-size: 14px;
   padding: 10px;
   color: #666; 
+}
+
+.community {
+  text-align: center;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+
+.fancy span {
+  width: 120px;
+  display: inline-block;
+  position: relative;  
+}
+
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-bottom: 1px solid #BBB;
+  border-top: 1px solid #BBB;
+  top: 0;
+  width: 100%;
+}
+
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
 }
